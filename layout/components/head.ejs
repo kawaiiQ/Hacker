@@ -2,17 +2,22 @@
   <meta charset="utf-8">
   <%
     var title = [];
+    var subtitle = true;
     if (page.current > 1) {
       title.push(__('page', page.current));
+      subtitle = false;
     }
     if (page.title) {
       title.push(page.title);
+      subtitle = false;
     }
     if (page.category) {
       title.push(page.category);
+      subtitle = false;
     }
     if (page.tag) {
       title.push(page.tag);
+      subtitle = false;
     }
     if (page.archive){
       if (page.year) {
@@ -20,11 +25,12 @@
       } else {
         title.push(__('archive_a'));
       }
+      subtitle = false;
     }
-    title.push(config.title);
-    if (config.subtitle) {
+    if (config.subtitle && subtitle) {
       title.push(config.subtitle);
     }
+    title.push(config.title);
   %>
   <title><%= title.join(' | ') %></title>
 
