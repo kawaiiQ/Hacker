@@ -1,8 +1,12 @@
 <header>
   <div class="site-branding">
     <h1 class="site-logo">
-      <br />
-      <a href="<%- config.root %>"><img src="/images/logo.png" /></a>
+      <div>
+        <a href="<%- config.root %>"><img src="<%- config.root %>images/logo.png" /></a>
+        <% if (theme.widget){ %>
+          <a href="<%- config.root %>"><img id="logo-widget" src="<%- config.root %>images/widget.png" /></a>
+        <% } %>
+      </div>
     </h1>
     <p class="site-description"><% if (config.subtitle){ %><%= config.subtitle %><% } %></p>
   </div>

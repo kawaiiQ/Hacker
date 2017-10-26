@@ -12,3 +12,8 @@ disqus_shortname:
 
 # google analytics
 googleTrackId:
+
+# widget settings
+widget: true
+maxDistance: 15
+sensitive: 0.01
