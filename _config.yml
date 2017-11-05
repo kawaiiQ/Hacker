@@ -17,3 +17,6 @@ googleTrackId:
 widget: true
 maxDistance: 15
 sensitive: 0.01
+
+# MathJax support
+mathJax: true
