@@ -43,6 +43,10 @@
     <div class="entry">
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
+        <center>
+          <p>......</p>
+          <a href="<%- item.link %>"><big><%= __('more') %></big></a>
+        </center>
       <% } else { %>
         <%- item.content %>
       <% } %>
