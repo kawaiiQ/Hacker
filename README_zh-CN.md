@@ -8,6 +8,10 @@
 
 * 修改网页标题的生成格式，仅首页的标题中包含副标题。
 
+* 添加对MathJax的支持。
+
+* 修改原有样式风格。
+
 ## Demo
 参考我的博客：http://kawaiiq.github.io/
 
@@ -37,7 +41,7 @@ __注意：版本更新后建议在hexo生成前执行一次`hexo clean`，清�
 
 ### 使用widget（小部件）
 
-小部件位于LOGO之上，可以随着鼠标的移动“看向”鼠标指针。运用小部件可以实现一些有趣的效果，例如看向鼠标指针的眼睛等。
+小部件位于LOGO之上，可以随着鼠标的移动“看向”鼠标指针。
 
 使用小部件也非常简单，只需替换小部件图片并在主题配置文件中修改相关配置即可。
 
@@ -57,6 +61,19 @@ sensitive: 0.01
 `maxDistance`：整数，小部件能够移动的最大距离；
 
 `sensitive`：数字，小部件跟随鼠标移动的灵敏度。
+
+### MathJax支持
+
+MathJax支持默认开启。你可以使用`$ ... $`或`$$ ... $$`的形式来写MathJax的公式。
+
+在主题配置文件`_config.yml`中:
+
+```
+# MathJax support
+mathJax: true
+```
+
+`mathJax`: 是否启用MathJax支持。
 
 ## 协议
 GNU GPL(General Public License) v2.0

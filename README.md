@@ -7,6 +7,10 @@ Based on [Hacker](https://github.com/CodeDaraW/Hacker). Made the following modif
 
 * Change the format of title. Only the title of index contains subtitle.
 
+* MathJax support.
+
+* Modified style.
+
 ## Demo
 You can refer to my blog: http://kawaiiq.github.io/
 
@@ -35,7 +39,7 @@ Replace `source/images/logo.png` with your favorite picture. To have a better di
 
 ### Use Widget
 
-The widget is on the logo, which can automatically "look at" the mouse cursor when the mouse moves. With widget, you can make some interesting things, such as an eye which looks at the mouse cursor.
+The widget is on the logo, which can automatically "look at" the mouse cursor when the mouse moves.
 
 It is simple to use widget. Just replace the picture of widget and modify the corresponding settings.
 
@@ -55,6 +59,19 @@ sensitive: 0.01
 `maxDistance`: an integer that defines the maximum distance the widget can move;
 
 `sensitive`: a number that defines the sensitive of widget.
+
+### MathJax Support
+
+By default, the MathJax support it enabled. You can use the format `$ ... $` or `$$ ... $$` to write MathJax formulas.
+
+In the theme configuration file `_config.yml`:
+
+```
+# MathJax support
+mathJax: true
+```
+
+`mathJax`: whether enable the MathJax Support.
 
 ## License
 GNU GPL(General Public License) v2.0
