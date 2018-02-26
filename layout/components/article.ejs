@@ -45,7 +45,13 @@
         <%- item.excerpt %>
         <center>
           <p>......</p>
-          <a href="<%- item.link %>"><big><%= __('more') %></big></a>
+
+          <% if (item.link){ %>
+            <a href="<%- item.link %>"><big><%= __('more') %></big></a>
+          <% } else { %>
+            <a href="<%- config.root %><%- item.path %>"><big><%= __('more') %></big></a>
+          <% } %>
+
         </center>
       <% } else { %>
         <%- item.content %>
