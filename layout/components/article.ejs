@@ -45,12 +45,13 @@
         <%- item.excerpt %>
         <center>
           <p>......</p>
-
+          <nav class="pagination">
           <% if (item.link){ %>
-            <a href="<%- item.link %>"><big><%= __('more') %></big></a>
+            <a href="<%- item.link %>" class="pagination-prev"><big><b><%= __('more') %></b></big></a>
           <% } else { %>
-            <a href="<%- config.root %><%- item.path %>"><big><%= __('more') %></big></a>
+            <a href="<%- config.root %><%- item.path %>" class="pagination-prev"><big><b><%= __('more') %></b></big></a>
           <% } %>
+          </nav>
 
         </center>
       <% } else { %>
